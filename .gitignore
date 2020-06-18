@@ -1,0 +1,6 @@
+/.vscode
+/randomEnv
+/.idea
+*.log
+*.pyc
+*.metainfo
