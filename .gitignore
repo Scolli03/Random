@@ -4,3 +4,5 @@
 *.log
 *.pyc
 *.metainfo
+*.xlsx
+*.csv
