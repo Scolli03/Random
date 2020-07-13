@@ -77,7 +77,7 @@ def write_csv(infolists):
 
 if __name__ == "__main__":
 	start = timeit.default_timer()
-	rootpath = r"\\File02\GE_Layout"	
+	rootpath = r"\\dc01\layout_reports\_CUSTOMERS"	
 	log.info('---------------------------Start---------------------------')		
 	data,count = search_directory(rootpath)
 	write_csv(data)
