@@ -3,10 +3,11 @@ import statistics
 import re
 from zipfile import ZipFile as zf, BadZipFile
 import timeit
-from LoggerManager import Logger
+from LoggerManager import make_logger
 from datetime import datetime
 import csv
-log = Logger().make_logger('SizeByExtenstion',location=r"C:\Users\shainc\Desktop\Random Scripts")
+import sys
+log = make_logger("SizeByExtenstion")
 
 def getextenstion(file,filepath = None):
 	try:
@@ -77,7 +78,7 @@ def write_csv(infolists):
 
 if __name__ == "__main__":
 	start = timeit.default_timer()
-	rootpath = r"\\dc01\layout_reports\_CUSTOMERS"	
+	rootpath = r"Your\starting\location"	
 	log.info('---------------------------Start---------------------------')		
 	data,count = search_directory(rootpath)
 	write_csv(data)
